@@ -1,10 +1,11 @@
 function adicionaItem(event){
     let novoItem = document.createElement("article")
     novoItem.classList.add("item")
-    let referencia = document.querySelector(".container")
-    referencia.insertAdjacentElement("beforeend", novoItem)
+    let container = document.querySelector(".container")
+    container.insertAdjacentElement("beforeend", novoItem)
+
 }
 
 function removeItem(){
-    event.target.remove("Item")
+    event.target.remove("removeItem")
 }
